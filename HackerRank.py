@@ -1,11 +1,11 @@
 # Challenges provided by HackerRank: https://www.hackerrank.com/
 # All answers written in Python3
 
-# --Say "Hello, World!" With Python
+# -- Say "Hello, World!" With Python
 
 print("Hello, World!")
 
-# --Python If-Else
+# -- Python If-Else
 
 #!/bin/python3
 
@@ -27,7 +27,7 @@ else:
     else:
         print('Not Weird')
 
-# --Arithmetic Operators
+# -- Arithmetic Operators
 
 if __name__ == '__main__':
     a = int(input())
@@ -36,7 +36,7 @@ print(a + b)
 print(a - b)
 print(a * b)
 
-# --Python: Division
+# -- Python: Division
 
 if __name__ == '__main__':
     a = int(input())
@@ -44,3 +44,13 @@ if __name__ == '__main__':
     
 print(a//b)
 print(a/b)
+
+# -- Loops
+
+if __name__ == '__main__':
+    n = int(input())
+
+i = 0
+while i < n:
+    print(pow(i, 2))
+    i += 1
