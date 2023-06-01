@@ -69,3 +69,18 @@ def is_leap(year):
 
 year = int(input())
 print(is_leap(year))
+
+# -- Print Function
+
+if __name__ == '__main__':
+    n = int(input())
+
+i = 1
+list = []
+while i <= n:
+    list.append(i)
+    i += 1
+
+str_list = [str(x) for x in list]
+
+print("".join(str_list))
