@@ -17,24 +17,26 @@ import sys
 
 if __name__ == '__main__':
     n = int(input().strip())
-if n % 2 != 0:
-    print('Weird')
-else:
-    if n >=2 and n <= 5:
-        print('Not Weird')
-    elif n >= 6 and n <= 20:
+    
+    if n % 2 != 0:
         print('Weird')
     else:
-        print('Not Weird')
+        if n >=2 and n <= 5:
+            print('Not Weird')
+        elif n >= 6 and n <= 20:
+            print('Weird')
+        else:
+            print('Not Weird')
 
 # -- Arithmetic Operators
 
 if __name__ == '__main__':
     a = int(input())
     b = int(input())
-print(a + b)
-print(a - b)
-print(a * b)
+
+    print(a + b)
+    print(a - b)
+    print(a * b)
 
 # -- Python: Division
 
@@ -42,18 +44,18 @@ if __name__ == '__main__':
     a = int(input())
     b = int(input())
     
-print(a//b)
-print(a/b)
+    print(a//b)
+    print(a/b)
 
 # -- Loops
 
 if __name__ == '__main__':
     n = int(input())
 
-i = 0
-while i < n:
-    print(pow(i, 2))
-    i += 1
+    i = 0
+    while i < n:
+        print(pow(i, 2))
+        i += 1
 
 # -- Write a function
 
@@ -67,23 +69,23 @@ def is_leap(year):
     
     return leap
 
-year = int(input())
-print(is_leap(year))
+    year = int(input())
+    print(is_leap(year))
 
 # -- Print Function
 
 if __name__ == '__main__':
     n = int(input())
 
-i = 1
-list = []
-while i <= n:
-    list.append(i)
-    i += 1
+    i = 1
+    list = []
+    while i <= n:
+        list.append(i)
+        i += 1
 
-str_list = [str(x) for x in list]
+    str_list = [str(x) for x in list]
 
-print("".join(str_list))
+    print("".join(str_list))
 
 # -- List Comprehensions
 
@@ -93,12 +95,22 @@ if __name__ == '__main__':
     z = int(input())
     n = int(input())
     
-coords=[]
+    coords=[]
 
-for i in range(x + 1): 
-    for j in range(y + 1): 
-        for k in range(z + 1): 
-            if ((i + j + k) != n):
-                coords.append([i,j,k])
-                    
-print(coords)
+    for i in range(x + 1): 
+        for j in range(y + 1): 
+            for k in range(z + 1): 
+                if ((i + j + k) != n):
+                    coords.append([i,j,k])
+
+    print(coords)
+
+ # -- Find the Runner-Up Score!
+
+if __name__ == '__main__':
+    n = int(input())
+    arr = map(int, input().split())
+
+    arr2 = list(set(arr))
+    arr2.sort()
+    print(arr2[-2])
