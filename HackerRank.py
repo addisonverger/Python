@@ -114,3 +114,22 @@ if __name__ == '__main__':
     arr2 = list(set(arr))
     arr2.sort()
     print(arr2[-2])
+
+# -- Nested Lists
+
+if __name__ == '__main__':
+    students = []
+    for _ in range(int(input())):
+        name = input()
+        score = float(input())
+        students.append([name, score])  
+        
+    students = sorted(students, key = lambda x: x[1])   
+    second_lowest_score = sorted(list(set([x[1] for x in students])))[1] 
+    
+    sls_students = []
+    for x in students:
+        if x[1] == second_lowest_score:
+            sls_students.append(x[0])
+
+    print("\n".join(sorted(sls_students))) 
