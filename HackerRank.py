@@ -172,3 +172,17 @@ print(pow(a,b) + pow(c,d))
 
 for i in range(1,int(input())):
     print(i*((10**i-1)//9))
+
+# -- Incorrect Regex
+
+import re
+
+T = int(input())
+
+for _ in range(T):
+    string = input()
+    try:
+        re.compile(string)
+        print(True)
+    except re.error:
+        print(False)
