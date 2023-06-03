@@ -167,3 +167,8 @@ c = int(input())
 d = int(input())
 
 print(pow(a,b) + pow(c,d))
+
+# -- Triangle Quest
+
+for i in range(1,int(input())):
+    print(i*((10**i-1)//9))
