@@ -149,3 +149,12 @@ if __name__ == '__main__':
     avg_lst = sum(lst) / len(lst)
     rnd_avg = format(round(avg_lst, 2), '.2f')
     print (rnd_avg)
+
+# -- Power - Mod Power
+
+a = int(input())
+b = int(input())
+m = int(input())
+
+print(pow(a,b))
+print(pow(a,b,m))
