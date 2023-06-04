@@ -209,3 +209,17 @@ if __name__ == '__main__':
     first_name = input()
     last_name = input()
     print_full_name(first_name, last_name)
+
+# -- Mutations
+
+def mutate_string(string, position, character):
+    l = list(string)
+    l[position] = character
+    string = ''.join(l)
+    return string
+
+if __name__ == '__main__':
+    s = input()
+    i, c = input().split()
+    s_new = mutate_string(s, int(i), c)
+    print(s_new)
