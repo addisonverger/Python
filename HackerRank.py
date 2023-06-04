@@ -198,3 +198,14 @@ if __name__ == '__main__':
     line = input()
     result = split_and_join(line)
     print(result)
+
+# -- What's Your Name?
+
+def print_full_name(first_name, last_name):
+    name_string = "Hello " + first_name + " " + last_name + "! You just delved into python."
+    print(name_string) 
+
+if __name__ == '__main__':
+    first_name = input()
+    last_name = input()
+    print_full_name(first_name, last_name)
