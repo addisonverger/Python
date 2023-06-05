@@ -313,3 +313,20 @@ if __name__ == '__main__':
     string, max_width = input(), int(input())
     result = wrap(string, max_width)
     print(result)
+
+# -- Designer Door Mat
+
+N, M = map(int, input().split())
+d = '.|.'
+w = 'WELCOME'
+
+#Top Pattern
+for i in range(1,((N-1)//2)+1):
+    print((d*(2*i-1)).center(M, '-'))
+
+#Welcome
+print(w.center(M, '-'))
+
+#Bottom Pattern
+for i in range(((N-1)//2), 0, -1):
+    print((d*(2*i-1)).center(M, '-'))
