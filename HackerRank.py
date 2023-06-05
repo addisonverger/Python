@@ -299,3 +299,17 @@ for i in range(thickness+1):
 #Bottom Cone
 for i in range(thickness):
     print(((c*(thickness-i-1)).rjust(thickness)+c+(c*(thickness-i-1)).ljust(thickness)).rjust(thickness*6))
+
+# -- Text Wrap
+
+import textwrap
+
+def wrap(string, max_width):
+    wrapper = textwrap.TextWrapper(width=max_width)
+    w_string = wrapper.fill(text=string)
+    return(w_string)
+
+if __name__ == '__main__':
+    string, max_width = input(), int(input())
+    result = wrap(string, max_width)
+    print(result)
