@@ -341,3 +341,27 @@ def print_formatted(number):
 if __name__ == '__main__':
     n = int(input())
     print_formatted(n)
+
+# -- Lists
+
+if __name__ == '__main__':
+    N = int(input())
+    l = []
+    
+    for i in range(N):
+        cmd, *args = input().split()
+        args = [int(x) for x in args]
+        if cmd == 'insert':
+            l.insert(args[0],args[1])
+        elif cmd == 'print':
+            print(l)
+        elif cmd == 'remove':
+            l.remove(args[0])
+        elif cmd == 'append':
+            l.append(args[0])
+        elif cmd == 'sort':
+            l.sort()
+        elif cmd == 'pop':
+            l.pop()
+        elif cmd == 'reverse':
+            l.reverse()
