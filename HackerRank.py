@@ -330,3 +330,14 @@ print(w.center(M, '-'))
 #Bottom Pattern
 for i in range(((N-1)//2), 0, -1):
     print((d*(2*i-1)).center(M, '-'))
+
+# -- String Formatting
+
+def print_formatted(number):
+    lngth = len(bin(number)[2:])
+    for i in range (1, number + 1):
+        print(str(i).rjust(lngth, ' '), oct(i)[2:].rjust(lngth, ' '), hex(i)[2:].rjust(lngth, ' ').upper(), bin(i)[2:].rjust(lngth, ' '))
+                
+if __name__ == '__main__':
+    n = int(input())
+    print_formatted(n)
