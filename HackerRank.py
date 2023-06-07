@@ -387,3 +387,17 @@ for i in range(N):
 
 arr_sum = numpy.sum(my_array, axis = 0)
 print(numpy.prod(arr_sum))
+
+# -- Min and Max
+
+import numpy
+
+N, M = map(int, input().split())
+my_array = []
+
+for i in range(N):
+    l = list(map(int, input().split()))
+    my_array.append(l)
+    
+arr_min = numpy.min(my_array, axis = 1)
+print(numpy.max(arr_min))
