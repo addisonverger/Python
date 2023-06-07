@@ -373,3 +373,17 @@ if __name__ == '__main__':
     integer_list = list(map(int, input().split()))
     t = tuple(integer_list)
     print(hash(t))
+
+# -- Sum and Prod
+
+import numpy
+
+N, M = map(int, input().split())
+my_array = []
+
+for i in range(N):
+    l = list(map(int, input().split()))
+    my_array.append(l)
+
+arr_sum = numpy.sum(my_array, axis = 0)
+print(numpy.prod(arr_sum))
