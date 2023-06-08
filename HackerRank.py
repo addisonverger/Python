@@ -416,3 +416,21 @@ for i in range(N):
 print(numpy.mean(my_array, axis = 1))
 print(numpy.var(my_array, axis = 0))
 print(round(numpy.std(my_array, axis = None), 11))
+
+# -- Dot and Cross
+
+import numpy
+
+N = int(input())
+A = []
+B = []
+
+for i in range(N):
+    l = list(map(int, input().split()))
+    A.append(l)
+
+for i in range(N):
+    l = list(map(int, input().split()))
+    B.append(l)
+
+print(numpy.dot(A, B))
