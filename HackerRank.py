@@ -434,3 +434,13 @@ for i in range(N):
     B.append(l)
 
 print(numpy.dot(A, B))
+
+# -- Inner and Outer
+
+import numpy
+
+A = list(map(int, input().split()))
+B = list(map(int, input().split()))
+
+print(numpy.inner(A, B))
+print(numpy.outer(A, B))
