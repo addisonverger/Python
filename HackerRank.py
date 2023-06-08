@@ -444,3 +444,12 @@ B = list(map(int, input().split()))
 
 print(numpy.inner(A, B))
 print(numpy.outer(A, B))
+
+# -- Polynomials
+
+import numpy
+
+P = list(map(float, input().split()))
+x = int(input())
+
+print(numpy.polyval(P, x))
