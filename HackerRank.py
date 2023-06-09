@@ -453,3 +453,16 @@ P = list(map(float, input().split()))
 x = int(input())
 
 print(numpy.polyval(P, x))
+
+# -- Linear Algebra
+
+import numpy
+
+N = int(input())
+A = []
+
+for i in range(N):
+    l = list(map(float, input().split()))
+    A.append(l)
+    
+print(round(numpy.linalg.det(A), 2))
