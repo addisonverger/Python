@@ -466,3 +466,13 @@ for i in range(N):
     A.append(l)
     
 print(round(numpy.linalg.det(A), 2))
+
+# -- sWAP cASE
+
+def swap_case(s):
+    return s.swapcase()
+
+if __name__ == '__main__':
+    s = input()
+    result = swap_case(s)
+    print(result)
