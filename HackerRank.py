@@ -503,3 +503,13 @@ if __name__ == '__main__':
     fptr.write(result + '\n')
 
     fptr.close()
+
+# -- itertools.product()
+
+import itertools
+
+A = list(map(int, input().split()))
+B = list(map(int, input().split()))
+
+l = list(itertools.product(A, B))
+print(" ".join(map(str, l)))
