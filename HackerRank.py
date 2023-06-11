@@ -526,3 +526,20 @@ l = sorted(list(permutations(S, k)))
 
 for i in l:
     print("".join(i))
+
+# -- itertools.combinations()
+
+from itertools import combinations
+
+S, k = input().split()
+k = int(k)
+S = sorted([*S])
+
+arr = []
+
+for i in range(1, k+1):
+    l = list(combinations(S, i))
+    arr += l
+
+for i in arr:
+   print("".join(i))
