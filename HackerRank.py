@@ -513,3 +513,16 @@ B = list(map(int, input().split()))
 
 l = list(itertools.product(A, B))
 print(" ".join(map(str, l)))
+
+# -- itertools.permutations()
+
+from itertools import permutations
+
+S, k = input().split()
+S = [*S]
+k = int(k)
+
+l = sorted(list(permutations(S, k)))
+
+for i in l:
+    print("".join(i))
