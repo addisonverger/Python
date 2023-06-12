@@ -543,3 +543,16 @@ for i in range(1, k+1):
 
 for i in arr:
    print("".join(i))
+
+# -- itertools.combinations_with_replacement()
+
+from itertools import combinations_with_replacement
+
+S, k = input().split()
+S = sorted([*S])
+k = int(k)
+
+arr = list(combinations_with_replacement(S,k))
+
+for i in arr:
+    print("".join(i))
