@@ -567,3 +567,21 @@ for x in range(N) :
     S.add(c)
 
 print(len(S))
+
+# -- Set .discard(), .remove() & .pop()
+
+n = int(input())
+s = set(map(int, input().split()))
+N = int(input())
+
+for i in range(N):
+    cmd, *args = input().split()
+    args = [int(x) for x in args]
+    if cmd == 'remove':
+        s.remove(args[0])
+    elif cmd == 'discard':
+        s.discard(args[0])
+    elif cmd == 'pop':
+        s.pop()
+        
+print(sum(s))
