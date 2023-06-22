@@ -556,3 +556,14 @@ arr = list(combinations_with_replacement(S,k))
 
 for i in arr:
     print("".join(i))
+
+# -- Set .add()
+
+N = int(input())
+S = set()
+
+for x in range(N) :
+    c = input()
+    S.add(c)
+
+print(len(S))
