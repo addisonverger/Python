@@ -615,3 +615,13 @@ B = set(map(int, input().split()))
 
 N = N.difference(B)
 print(len(N))
+
+# -- Set .symmetric_difference() Operation
+
+n = int(input())
+N = set(map(int, input().split()))
+b = int(input())
+B = set(map(int, input().split()))
+
+N = N.symmetric_difference(B)
+print(len(N))
