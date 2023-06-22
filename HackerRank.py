@@ -595,3 +595,13 @@ B = set(map(int, input().split()))
 
 N = N.union(B)
 print(len(N))
+
+# -- Set .intersection() Operation
+
+n = int(input())
+N = set(map(int, input().split()))
+b = int(input())
+B = set(map(int, input().split()))
+
+N = N.intersection(B)
+print(len(N))
