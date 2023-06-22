@@ -605,3 +605,13 @@ B = set(map(int, input().split()))
 
 N = N.intersection(B)
 print(len(N))
+
+# -- Set .difference() Operation
+
+n = int(input())
+N = set(map(int, input().split()))
+b = int(input())
+B = set(map(int, input().split()))
+
+N = N.difference(B)
+print(len(N))
