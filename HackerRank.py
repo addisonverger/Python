@@ -652,3 +652,20 @@ c.sort()
 
 for x in range(len(c)):
     print(c[x])
+
+# -- No Idea!
+
+n, m = map(int, input().split())
+arr = list(map(int, input().split()))
+A = set(map(int, input().split()))
+B = set(map(int, input().split()))
+
+h = 0
+
+for x in arr:
+    if x in A:
+        h += 1
+    elif x in B:
+        h -= 1
+
+print(h)
