@@ -669,3 +669,24 @@ for x in arr:
         h -= 1
 
 print(h)
+
+# -- Set Mutations
+
+A = int(input())
+a = set(map(int, input().split()))
+N = int(input())
+
+for x in range(N):
+    operation, l = input().split()
+    l = int(l)
+    s = set(map(int, input().split()))
+    if operation == 'intersection_update':
+        a.intersection_update(s)
+    elif operation == 'update':
+        a.update(s)
+    elif operation == 'symmetric_difference_update':
+        a.symmetric_difference_update(s)
+    elif operation == 'difference_update':
+        a.difference_update(s)
+
+print(sum(a))
