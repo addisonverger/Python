@@ -701,3 +701,16 @@ for x in range(T):
     B = int(input())
     b = set(map(int, input().split()))
     print(a.issubset(b))
+
+# -- Check Strict Superset
+
+A = set(map(int, input().split()))
+n = int(input())
+counter = 0
+
+for x in range(n):
+    s = set(map(int, input().split()))
+    if s.issubset(A) == True:
+        counter += 1
+        
+print(counter == n)
