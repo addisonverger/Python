@@ -690,3 +690,14 @@ for x in range(N):
         a.difference_update(s)
 
 print(sum(a))
+
+# -- Check Subset
+
+T = int(input())
+
+for x in range(T):
+    A = int(input())
+    a = set(map(int, input().split()))
+    B = int(input())
+    b = set(map(int, input().split()))
+    print(a.issubset(b))
