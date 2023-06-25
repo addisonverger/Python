@@ -714,3 +714,13 @@ for x in range(n):
         counter += 1
         
 print(counter == n)
+
+# -- Calendar Module
+
+import calendar
+
+m, d, y = map(int, input().split())
+
+weekday_name = calendar.day_name[calendar.weekday(y,m,d)]
+
+print(weekday_name.upper())
