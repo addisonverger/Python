@@ -724,3 +724,16 @@ m, d, y = map(int, input().split())
 weekday_name = calendar.day_name[calendar.weekday(y,m,d)]
 
 print(weekday_name.upper())
+
+# -- Exceptions
+
+T = int(input())
+
+for x in range(T):
+    a, b = input().split()
+    try:
+        print(int(a) // int(b))
+    except ZeroDivisionError as e:
+        print("Error Code:",e)
+    except ValueError as e:
+        print("Error Code:",e)
